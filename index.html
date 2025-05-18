@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+    }
+
+    .project {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jane Doe</h1>
+    <p>Web Developer | Designer | Creator</p>
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="navigate('about')">About</a></li>
+        <li><a href="#projects" onclick="navigate('projects')">Projects</a></li>
+        <li><a href="#contact" onclick="navigate('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Jane, a passionate web developer who loves building beautiful and functional websites. I specialize in HTML, CSS, and JavaScript and enjoy turning ideas into digital reality.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website showcasing my work and skills.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do App</h3>
+      <p>A simple to-do list built using vanilla JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: janedoe@example.com</p>
+    <p>LinkedIn: linkedin.com/in/janedoe</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jane Doe</p>
+  </footer>
+
+  <script>
+    function navigate(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+</body>
+</html>
